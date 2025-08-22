@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="css/style_benefit.css">
     <link rel="stylesheet" href="css/style_list.css">
     <link rel="stylesheet" href="css/style_phanduoi.css">
-    <link rel="stylesheet" href="css/style_mobile.css">
+    <link rel="stylesheet" href="css/note.css">
+    <link rel="stylesheet" href="css/style-Tenants-Landlords.css">
+    <link rel="stylesheet" href="css/style-CTA.css">
+    <link rel="stylesheet" href="css/style-Footer.css">
 </head>
 
 <body>
     <div class="container">
+
         <header class="top_nav">
             <div class="top_nav_left">
                 <img src="images/Logotype.png" alt="logo" id="logo">
@@ -29,8 +33,9 @@
                 <button class="signup">Sign up</button>
             </div>
         </header>
+
+
         <section class="hero">
-            <!-- left hero-->
             <div class="left_hero">
                 <div class="headline">
                     <h1>Buy, rent, or sell your property easily</h1>
@@ -183,8 +188,8 @@
                 <p>Some of our picked properties near you location.</p>
             </pl_header>
 
-            <section class="filters">
-                <div class="filter-buttons">
+            <section class="tab">
+                <div class="segmented_control">
                     <button class="active">
                         
                         <div >
@@ -218,7 +223,7 @@
                 </div>
             </section>
 
-            <section class="property-grid">
+            <section class="listed_properties">
                 <div class="property-card popular">
                     <div class="image-wrapper">
                         <img src="images/House1.png" alt="House 1">
@@ -341,62 +346,48 @@
                 <button>Browse more properties</button>
             </div>
         </section>
-        <!-- phan duoi-->
-        <!-- ========== EASY SECTION ========== -->
-        <section class="easy">
-            <div class="easy__inner">
-                <div class="easy__top">
-                    <div class="easy__title">
+        
+        <!--tenants_landlords-->
+        <section class="tenants_landlords">
+            <div class="tenants_landlords__inner">
+                <div class="tenants_landlords__top">
+                    <div class="tenants_landlords__title">
                         <h2>
-                            We make it easy for
-                            <span class="easy__accent">tenants</span> and
-                            <span class="easy__accent">landlords</span>.
+                            We make it tenants_landlords for
+                            <span class="tenants_landlords__accent">tenants</span> and
+                            <span class="tenants_landlords__accent">landlords</span>.
                         </h2>
                     </div>
 
-                    <p class="easy__desc">
-                        Whether it’s selling your current home, getting financing, or buying a new home, we make it easy
+                    <p class="tenants_landlords__desc">
+                        Whether it’s selling your current home, getting financing, or buying a new home, we make it tenants_landlords
                         and efficient.
                         The best part? You’ll save a bunch of money and time with our services.
                     </p>
                 </div>
 
-                <div class="easy__cards">
-                    <article class="easy-card easy-card--dark">
-                        <div class="easy-card__icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                    d="M10 5l1.5-2h5L18 5h2a2 2 0 012 2v9a2 2 0 01-2 2H4a2 2 0 01-2-2V7a2 2 0 012-2h6zm2 12a5 5 0 100-10 5 5 0 000 10zm0-2.2a2.8 2.8 0 110-5.6 2.8 2.8 0 010 5.6z" />
-                            </svg>
-                        </div>
-                        <div class="easy-card__content">
+                <div class="tenants_landlords__cards">
+                    <article class="tenants_landlords-card tenants_landlords-card--dark">
+                      
+                        <div class="tenants_landlords-card__content">
                             <h3>Virtual home tour</h3>
                             <p>You can communicate directly with landlords and we provide you with virtual tour before
                                 you buy or rent the property.</p>
                         </div>
                     </article>
 
-                    <article class="easy-card easy-card--light">
-                        <div class="easy-card__icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 3l9 7v10a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1V10l9-7z" />
-                            </svg>
-                        </div>
-                        <div class="easy-card__content">
+                    <article class="tenants_landlords-card tenants_landlords-card--light">
+                      
+                        <div class="tenants_landlords-card__content">
                             <h3>Find the best deal</h3>
                             <p>Browse thousands of properties, save your favorites and set up search alerts so you don’t
                                 miss the best home deal!</p>
                         </div>
                     </article>
 
-                    <article class="easy-card easy-card--accent">
-                        <div class="easy-card__icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                    d="M6 2h8l4 4v14a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm8 1.5V7h3.5L14 3.5zM8 9h8v2H8V9zm0 4h8v2H8v-2z" />
-                            </svg>
-                        </div>
-                        <div class="easy-card__content">
+                    <article class="tenants_landlords-card tenants_landlords-card--accent">
+                      
+                        <div class="tenants_landlords-card__content">
                             <h3>Get full guidance</h3>
                             <p>Find all the necessary information to make the right decision directly with our experts.
                             </p>
@@ -404,26 +395,26 @@
                     </article>
                 </div>
 
-                <div class="easy__stats">
-                    <div class="easy-stat">
-                        <div class="easy-stat__num">7.4%</div>
-                        <div class="easy-stat__label">Property Return Rate</div>
+                <div class="tenants_landlords__stats">
+                    <div class="tenants_landlords-stat">
+                        <div class="tenants_landlords-stat__num">7.4%</div>
+                        <div class="tenants_landlords-stat__label">Property Return Rate</div>
                     </div>
-                    <div class="easy-stat">
-                        <div class="easy-stat__num">3,856</div>
-                        <div class="easy-stat__label">Property in Sell & Rent</div>
+                    <div class="tenants_landlords-stat">
+                        <div class="tenants_landlords-stat__num">3,856</div>
+                        <div class="tenants_landlords-stat__label">Property in Sell & Rent</div>
                     </div>
-                    <div class="easy-stat">
-                        <div class="easy-stat__num">2,540</div>
-                        <div class="easy-stat__label">Daily Completed Transactions</div>
+                    <div class="tenants_landlords-stat">
+                        <div class="tenants_landlords-stat__num">2,540</div>
+                        <div class="tenants_landlords-stat__label">Daily Completed Transactions</div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ========== /EASY SECTION ========== -->
+   
 
-        <!-- ================== Landlord Section ================== -->
-        <section class="landlord-section">
+        <!--CTA-->
+        <section class="CTA">
             <div class="container">
                 <p class="landlord-subtitle">No Spam Promise</p>
 

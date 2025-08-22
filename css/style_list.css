@@ -25,7 +25,7 @@ pl_header p {
     font-size: 1em;
 }
 
-.filters {
+.tab {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +35,7 @@ pl_header p {
     
 }
 
-.filter-buttons {
+.segmented_control {
     display: flex;
     gap: 10px;
     background-color: rgba(240, 239, 251, 1);
@@ -44,7 +44,7 @@ pl_header p {
     padding: 15px;
 }
 
-.filter-buttons button {
+.segmented_control button {
     background-color: rgba(240, 239, 251, 1);
     border: none;
     padding:    5px 20px;
@@ -55,12 +55,12 @@ pl_header p {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.filter-buttons button:nth-child(1)
+.segmented_control button:nth-child(1)
 {
     background-color: #fff;
     color: rgba(112, 101, 240, 1) !important;
 }
-.filter-buttons button.active {
+.segmented_control button.active {
     display: flex;
     background-color: none;
     color: rgb(88, 85, 117);
@@ -69,7 +69,7 @@ pl_header p {
 }
 
 
-.filter-buttons button.active div:nth-child(1){
+.segmented_control button.active div:nth-child(1){
     margin-right: 10px;
 }
 .search-bar {
@@ -94,7 +94,7 @@ pl_header p {
     color: #a0aec0;
 }
 
-.property-grid {
+.listed_properties {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -160,8 +160,8 @@ pl_header p {
 .favorite img {
     width: 40px; 
     height: 40px;
-    display: block; /* Loại bỏ khoảng trắng thừa dưới hình ảnh */
-    object-fit: contain; /* Đảm bảo hình ảnh vừa vặn trong khung mà không bị méo */
+    display: block; 
+    object-fit: contain; 
 }
 .favorite:hover {
     background-color: #f0f4ff;
