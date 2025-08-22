@@ -2,6 +2,7 @@
 @media (max-width: 768px) {
     .container {
         padding: 10px;
+        width: 100%;
     }
 
     .top_nav {
@@ -139,12 +140,7 @@
     .trustpilot_top {
         justify-content: center;
     }
-}
 
-
-
-/* Mobile (Màn hình dưới 768px) */
-@media (max-width: 768px) {
     .hero-content h1 {
         font-size: 36px;
     }
