@@ -1,0 +1,317 @@
+/* ===============================
+   WE MAKE IT EASY SECTION
+   =============================== */
+
+/* Nền gradient tím/indigo phủ toàn section */
+.easy {
+    /* Gradient đậm như ảnh: tím đậm -> indigo */
+    background: rgba(16, 10, 85, 1);
+    color: #fff;
+    margin-top: 70px;
+}
+
+/* Khung giới hạn chiều rộng + padding trong */
+.easy__inner {
+    max-width: 1180px;
+    /* khung nội dung ~ 1140–1180px như thiết kế */
+    margin: 0 auto;
+    /* căn giữa ngang */
+    padding: 64px 24px 44px;
+    /* trên/lề ngang/dưới */
+}
+
+/* Hàng trên: tiêu đề bên trái – mô tả bên phải */
+.easy__top {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 28px;
+}
+
+/* Cột trái (tiêu đề) */
+.easy__title {
+    flex: 1;
+}
+
+.easy__title h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    margin: 0;
+}
+
+/* Tô màu chữ “tenants” và “landlords.” */
+.easy__accent {
+    color: #8f8cff;
+}
+
+.easy__desc {
+    flex: 1;
+    margin: 0;
+    padding: 12px 70px 20px 20px   ;
+    color: #cdd0ff;
+    line-height: normal;
+}
+
+/* Hàng giữa: 3 feature cards */
+.easy__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    /* khoảng cách giữa 3 box */
+    margin: 24px 0 26px;
+}
+
+/* Card chung */
+.easy-card {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 20px 22px;
+    border-radius: 12px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+    /* đổ bóng nhẹ như ảnh */
+}
+
+/* Màu nền từng card (khớp thiết kế) */
+.easy-card--dark {
+    background: rgba(255, 255, 255, 0.10);
+    color: #e8e9ff;
+}
+
+/* tím đậm trong suốt */
+.easy-card--light {
+    background: #ffffff;
+    color: #0f113b;
+}
+
+/* trắng nổi bật */
+.easy-card--accent {
+    background: #6e63ff;
+    color: #ffffff;
+}
+
+/* tím tươi */
+
+/* Vòng tròn icon trong mỗi card */
+.easy-card__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.easy-card--dark .easy-card__icon {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+.easy-card--light .easy-card__icon {
+    background: #eef0ff;
+    color: #6e63ff;
+}
+
+.easy-card--accent .easy-card__icon {
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+}
+
+/* Kích thước SVG icon */
+.easy-card__icon svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+}
+
+/* Nội dung card */
+.easy-card__content h3 {
+    margin: 2px 0 6px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.easy-card__content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Hàng dưới: 3 cột thống kê */
+.easy__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 0;
+    /* không gap để kẻ đường chia cột */
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 26px;
+    margin-top: 22px;
+}
+
+/* Mỗi ô thống kê, kẻ vạch ngăn cách giữa các cột */
+.easy-stat {
+    padding: 10px 12px;
+}
+
+.easy-stat+.easy-stat {
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.easy-stat__num {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: .3px;
+}
+
+.easy-stat__label {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #c7ccff;
+}
+
+
+
+
+/* ==== Landlord Section ==== */
+.landlord-section {
+  background: linear-gradient(to right, #f9f9ff, #fefeff);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.landlord-subtitle {
+  color: #7c3aed; /* tím nhạt */
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.landlord-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #0f172a; /* đen xám */
+}
+
+.landlord-desc {
+  color: #475569;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.landlord-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+
+.landlord-form input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.landlord-form button {
+  background: #7c3aed;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.landlord-form button:hover {
+  background: #6d28d9;
+}
+
+.landlord-note {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.landlord-note span {
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+
+/* ======================== */
+/* Footer */
+/* ======================== */
+.footer {
+    background-color: #fff;
+    color: #0b0b0b;
+    padding-top: 80px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #333;
+}
+
+.footer-logo h2 {
+    color: var(--bg-white);
+    font-size: 28px;
+}
+
+.footer-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-menu h4 {
+    color: var(--bg-white);
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu ul li a {
+    color: #454242;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2.2;
+    transition: color 0.3s ease;
+}
+
+.footer-menu ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    color: #a0a0a0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+

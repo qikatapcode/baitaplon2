@@ -1,0 +1,341 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #f9f9fb;
+    color: #1a1a1a;
+    line-height: 1.5;
+    padding: 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/*TOP NAV  */
+.top_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 0%;
+    background-color: rgba(240, 239, 251, 1);
+
+}
+
+.top_nav_left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.top_nav_left img {
+    height: 32px;
+}
+
+.top_nav_left a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.top_nav_left select {
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding-right: 0%;
+}
+
+.top_nav_left a:hover {
+    color: #5a4fcf;
+}
+
+.top_nav_right button {
+    border: none;
+    background: none;
+    font-size: 14px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.top_nav_right .login {
+    color: #333;
+}
+
+.top_nav_right .signup {
+    background: #5a4fcf;
+    color: #fff;
+    font-weight: 600;
+}
+
+.top_nav_right .signup:hover {
+    background: #7b67ef;
+}
+
+/*  HERO*/
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    gap: 40px;
+    background: linear-gradient(to bottom, rgba(224, 222, 247, 1), rgba(224, 222, 247, 0));
+    padding: 50px 0px 10px 100px;
+
+}
+
+/* left hero*/
+.left_hero {
+    flex: 1;
+}
+
+.headline {
+    padding: 20px 0px 0px 20px;
+    width: 430px;
+    height: 306;
+}
+
+.headline h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+
+}
+
+.headline p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px;
+
+}
+
+/* Search box */
+.search {
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: none;
+    margin-bottom: 30px;
+    position: relative;
+    top:50px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 0px;
+    background-color: #fff;
+    width: 230px;
+    border-radius: 15px;
+    padding: 10px 20px 0px 20px;
+    
+}
+
+.search .tabs a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #666;
+}
+
+.search .tabs a:first-child {
+    color: #5a4fcf;
+    border-bottom: 2px solid #5a4fcf;
+    padding-bottom: 4px;
+}
+
+.search_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: absolute;
+    background-color: #fff;
+    width: 700px;
+    z-index: 10;
+    padding: 20px;
+    
+}
+
+.search_box>div {
+    flex-grow: 1;
+    padding: 0 15px;
+    text-align: left;
+}
+.search_box div:nth-child(3){
+    text-align: center;
+}
+.search_box .location,
+.search_box .when {
+    border-right: 1px solid #ccc;
+}
+
+.search_box p {
+    font-size: 12px;
+    color: #999;
+}
+
+.search_box h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.when>div {
+    display: flex;
+    align-items: center;
+}
+
+.search_box_button {
+    background: rgba(112, 101, 240, 1);
+    color: #fff;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.search_box_button:hover {
+    background: #4433aa;
+}
+
+/* Numbers */
+.numbers {
+    display: flex;
+    gap: 40px;
+    margin-top: 100px;
+    padding: 50px 10px 30px 20px;
+
+}
+
+.numbers  h3 {
+    color: rgba(112, 101, 240, 1);
+}
+.numbers p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.2;
+}
+
+.numbers img {
+    height: 35px;
+    margin-bottom: 7px;
+}
+
+/*right hero*/
+.right_hero {
+    flex: 1;
+    position: relative;
+    margin-top: -50px;
+    
+}
+
+.image {
+    background: url("../images/background.png") no-repeat center/cover;
+    height: 750px;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+
+.testimonial_profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10   px;
+    margin-top: 10px;
+}
+
+.testimonial_profile img.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.testimonial_profile .info h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.testimonial_profile .info p {
+    font-size: 12px;
+    color: #666;
+}
+
+.moved {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+}
+
+.testimonial_2 {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.testimonial_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.testimonial_box h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.testimonial_box p {
+    font-size: 12px;
+    color: #777;
+}
+
+.testimonial_2 text {
+    width: 173px;
+}
+/* Trustpilot box */
+.trustpilot {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: #1a1a3c;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px 0px 0px 0px ;
+    font-size: 14px;
+}
+.trustpilot_top{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.trustpilot img {
+    display: block;
+    margin: 6px 0;
+}

@@ -1,0 +1,94 @@
+.benefit {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0px 10px 100px;
+    background-color: #fff;
+    height: 700px;
+}
+
+.illustration {
+
+    width: 416px;
+    height: 500px;
+    border: 1.5px;
+    border-radius: 8px;
+    background-color: rgba(247, 247, 253, 1);
+}
+
+.content {
+    padding: 50px;
+    line-height: 1.2;
+}
+
+.content p {
+    margin-top: 20px;
+    color: rgba(16, 10, 85, 1);
+    width: 270px;
+}
+
+.content h3 {
+    font-size: 30px;
+    color: rgba(16, 10, 85, 1);
+}
+
+.content_button {
+    margin-top: 20px;
+    background-color: none;
+    font-size: 14px;
+    padding: 10px 18px 0px 0px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.content_button .button {
+    color: #fff;
+    font-weight: 600;
+    background-color: rgba(16, 10, 85, 1);
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+.content_button button:hover {
+    background-color: rgba(16, 10, 85, 0.5);
+}
+
+.mask_group {
+    margin-left: 55px;
+    margin-top: -55px;
+}
+
+.benefits2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    max-width: 1200px;
+    height: 500px;
+    font-size: 13px;
+    margin: 0px 65px 0px 50px;
+}
+
+
+.col1, .col2 {
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.col1 > div, .col2 > div {
+  flex: 1;
+  text-align: left;
+}
+
+.bnf2 , .bnf4 {
+    margin-top: 145px;
+}
+
+.benefits2 h3{
+    margin-top: 15px;
+}
+
+.benefits2 p{
+    margin-top: 15px;
+}
