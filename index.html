@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,20 +18,32 @@
     <div class="container">
 
         <header class="top_nav">
-            <div class="top_nav_left">
+            <div class="top_nav_left" id="menuLeft">
                 <img src="images/Logotype.png" alt="logo" id="logo">
                 <a href="#">Rent</a>
                 <a href="#">Buy</a>
                 <a href="#">Sell</a>
                 <a href="#">Manage Property</a><select></select>
-                <a href="#">Resources</a> <select></select>
+                <a href="#">Resources</a><select></select>
             </div>
 
-            <div class="top_nav_right">
+            <div class="top_nav_right" id="menuRight">
                 <button class="login">Login</button>
                 <button class="signup">Sign up</button>
             </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <script>
+                function toggleMenu() {
+                    document.getElementById("menuLeft").classList.toggle("active");
+                    document.getElementById("menuRight").classList.toggle("active");
+                }
+            </script>
+
         </header>
+
 
 
         <section class="hero">
@@ -215,7 +228,7 @@
                     <i class="fas fa-search"></i>
                     <input type="text" placeholder="Search...">
                 </div>
-                
+
             </section>
         </section>
 
@@ -343,7 +356,7 @@
         </div>
         </section>
 
-        <!--tenants_landlords-->
+        <!--Tenants_Landlords-->
         <section class="tenants_landlords">
             <div class="tenants_landlords__inner">
                 <div class="tenants_landlords__top">
@@ -500,7 +513,8 @@
                     <a href="#"><img src="images/linkedin 1.png" alt="LinkedIn"></a>
                 </div>
             </div>
-        </footer>     
+        </footer>
     </div>
 </body>
+
 </html>

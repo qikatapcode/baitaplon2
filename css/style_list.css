@@ -103,6 +103,8 @@ pl_header p {
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 auto;              
+    min-width: 300px;  
 }
 
 .property-card:hover {
