@@ -5,20 +5,20 @@
     background-color:#fff ;
 }
 
-pl_header {
+.pl_header {
     text-align: center;
     margin-bottom: 90px;
     padding: 20px 50px 20px 50px ;
 }
 
-pl_header h1 {
+.pl_header h1 {
     font-size: 2.5em;
     font-weight: 600;
     color: #1a202c;
     margin-bottom: 5px;
 }
 
-pl_header p {
+.pl_header p {
     color: #718096;
     font-size: 1em;
 }
